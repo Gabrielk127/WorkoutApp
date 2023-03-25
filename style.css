@@ -25,6 +25,8 @@ body {
     background: var(--bg-body);
 
     font-family: var(--ff-project);
+
+    width: 100%;
 }
 
 .page {
@@ -269,6 +271,13 @@ footer img {
     left: 0;
     z-index: -1;
     background-image: url(./assets/page2-background.png);
+    background-repeat: no-repeat;
+   
+    
+}
+
+.info {
+    align-items: center;
 }
 
 .info ul {
