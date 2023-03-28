@@ -29,6 +29,7 @@ body {
     font-family: var(--ff-project);
 
     width: 100%;
+    min-height: 850px;
 }
 
 .page {
@@ -71,8 +72,8 @@ body {
     letter-spacing: 0.05em;
     color: #FFFFFF;
     
-    margin-top: 3rem;
-    margin-bottom: 2rem;
+    margin-top: 7rem;
+    margin-bottom: 6rem;
 
     display: flex;
     flex-direction: column;
