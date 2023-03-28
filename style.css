@@ -38,14 +38,21 @@ body {
     display: none;
 }
 
+.welcome {
+    background: linear-gradient(169.35deg, #38474C -2.38%, #0E7D77 98.52%);
+    background-repeat: no-repeat;
+}
+
 .welcome img{
-    position: fixed;
+    position: relative;
     width: 375px;
     bottom: 0;
     left: 0;
+
 }
 
 .welcome h1 {
+    font-family: var(--ff-project);
     font-weight: 700;
     font-size: 4.5rem;
     line-height: 130%;
@@ -67,6 +74,28 @@ body {
 
     color: var(--img-Pcolor);
 
+}
+
+.welcome button {
+    font-family: var(--ff-project);
+    font-weight: 700;
+    font-size: 1.7rem;
+    line-height: 1.9rem;
+
+    text-align: center;
+
+    color: #0A0B17;
+
+    position: absolute;
+    width: 30rem;
+    height: 5rem;
+    bottom: 10rem;
+    left: 4rem;
+
+    background: #F8C06D;
+    border-radius: 110.752px;
+
+    border: none;
 }
 
 header, main {
