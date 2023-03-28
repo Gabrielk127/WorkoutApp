@@ -38,6 +38,37 @@ body {
     display: none;
 }
 
+.welcome img{
+    position: fixed;
+    width: 375px;
+    bottom: 0;
+    left: 0;
+}
+
+.welcome h1 {
+    font-weight: 700;
+    font-size: 4.5rem;
+    line-height: 130%;
+
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    
+    margin-top: 10rem;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.welcome span {
+    font-weight: 400;
+    font-size: 1.3rem;
+    line-height: 1.6rem;
+
+    color: var(--img-Pcolor);
+
+}
+
 header, main {
     margin: 2.4rem;
 }
@@ -90,6 +121,12 @@ header p {
 .card{
     position: relative;
     filter: brightness(80%);
+    margin-bottom: 2rem;
+}
+
+.card img {
+    width: 32.7rem;
+    height: 16rem;
 }
 .card p {
     position: absolute;
@@ -164,6 +201,10 @@ footer img {
     color: #BF5AF2;
 }
 
+.cardio {
+    margin-bottom: 15rem;
+}
+
 .cardio p {
     font-style: normal;
     font-weight: 500;
@@ -222,7 +263,7 @@ footer img {
     background: var(--bg-body);
     
     text-align: center;
-    margin: 23rem;
+    margin-top: 23rem;
     padding-top: 4rem;
 
     border-radius: 25px 25px 0 0;
@@ -275,6 +316,8 @@ footer img {
    
     
 }
+
+
 
 .info {
     align-items: center;
