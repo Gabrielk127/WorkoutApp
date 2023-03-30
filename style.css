@@ -58,6 +58,7 @@ body {
     flex-direction: column;
     align-items: center;
     position: relative;
+
 }
 
 .welcome img {
@@ -118,6 +119,8 @@ body {
 .page1 {
     background: #FEF9F1;
     min-height: 850px;
+    width: 100vw;
+
 }
 
 header {
@@ -234,7 +237,7 @@ header img {
     border: none;
     background: #FEF9F1;
 
-    animation: LeftRight 3000ms;
+    animation: LeftRight 1000ms;
 
 }
 
@@ -507,7 +510,7 @@ header img {
 }
 
 #down {
-    width: 3rem;
+    width: 2rem;
     margin-left: 3rem;
 }
 
