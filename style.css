@@ -51,15 +51,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-
     position: relative;
-}
-
-.welcome img{
-    width: 100%;
-    bottom: 0;
-    left: 0;
-    
 }
 
 .welcome h1 {
@@ -72,8 +64,8 @@ body {
     letter-spacing: 0.05em;
     color: #FFFFFF;
     
-    margin-top: 7rem;
-    margin-bottom: 6rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 
     display: flex;
     flex-direction: column;
@@ -116,6 +108,8 @@ body {
 
 header {
     padding: 2.4rem;
+
+    animation: topDown 3000ms;
 }
 
 header {
@@ -203,19 +197,22 @@ header img {
 
 }
 
-nav #menu {
+/* nav #menu {
     width: 100vw;
+    height: 8rem;
     background: none;
     padding-top: 2rem;
     position: fixed;
     bottom: 0;
     
-}
+} */
 
 
 .carousel {
     position: relative;
-    margin: 3rem;
+    margin: 1rem 5rem 5rem;
+    width: 270px;
+    height: 380px;
 }
 
 .carousel-inner {
@@ -332,8 +329,7 @@ nav #menu {
     text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33), -1px 0px 2px rgba(255, 255, 255, 0);
 }
 
-
-.page2::before {
+.pages::before {
     content: "";
     width: 100%;
     height: 40rem;
@@ -342,19 +338,54 @@ nav #menu {
     left: 0;
     z-index: -1;
     background-image: url(./assets/Workouts/background.png);
-    background-repeat: no-repeat;
-   
-    
+    background-repeat: no-repeat;    
 }
 
-.page2 .content {
+.pages .content {
     margin-top: 30rem;
     background: #FEF9F1;
     border-radius: 59.8988px 59.8988px 0px 0px;
     width: 100vw;
+
+    animation: downTop 3000ms;
 }
 
-.page2-card {
+@keyframes topDown {
+    0% {
+        opacity: 0.5;
+        transform: translateY(-130px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes downTop {
+    0% {
+        opacity: 0.8;
+       transform: translateY(100px); 
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes LeftRight {
+    0% {
+        opacity: 0.6;
+        transform: translateX(-100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.page-card {
     background: #FFFFFF;
     backdrop-filter: blur(3.32771px);
 
@@ -376,7 +407,7 @@ nav #menu {
     border-radius: 1.6rem;
 }
 
-.page2-card span {
+.page-card span {
     font-style: normal;
     font-weight: 500;
     font-size: 1.5rem;
@@ -392,7 +423,7 @@ nav #menu {
     gap: 1rem;
 }
 
-.page2 .content h2{
+.pages .content h2{
     margin-top: 4rem;
     margin-bottom: 2rem;
 
@@ -405,14 +436,14 @@ nav #menu {
 }
 
 
-.page2-cards img{
+.page-cards img{
     width: 13rem;
     height: 10rem;
 
     border-radius: 20px 0 0 20px;
 }
 
-.page2-cards p {
+.page-cards p {
     margin-left: 2rem;
     margin-top: 2rem;
     font-style: normal;
@@ -425,7 +456,7 @@ nav #menu {
 
 }
 
-.page2-cards span {
+.page-cards span {
     color: #848484;
 }
 
@@ -440,7 +471,42 @@ nav #menu {
 
     background: white;
 
-    margin: 5rem;
+    margin-top: 5rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
+
     padding-right: 3rem;
     border-radius: 20px;
+}
+
+
+
+.navegar {
+    background-color: white;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+
+    animation: LeftRight 3000ms;
+}
+
+.navegar button {
+    padding: .7em;
+
+    font-family: var(--ff-project);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14.4201px;
+    line-height: 24px;
+
+    border-radius: 22px;
+    border: none;
+    background: #FEF9F1;
+}
+
+.navegar button:hover {
+    background: #cbc6bd;
+
 }
