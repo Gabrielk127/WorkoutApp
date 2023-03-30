@@ -3,6 +3,9 @@ const btWelcome = document.querySelector('#btWelcome')
 const btQuadriceps = document.querySelector('#btQuadriceps')
 const btSuperior = document.querySelector('#btSuperior')
 const btPosterior = document.querySelector('#btPosterior')
+const btHome2 = document.querySelector('#home2')
+const btHome3 = document.querySelector('#home3')
+const btHome4 = document.querySelector('#home4')
 
 
 // PAGINAS
@@ -18,6 +21,10 @@ btWelcome.addEventListener('click', handleClickPage1)
 btQuadriceps.addEventListener('click', handleClickPage2)
 btSuperior.addEventListener('click', handleClickPage3)
 btPosterior.addEventListener('click', handleClickPage4)
+btHome2.addEventListener('click', handleClickPage2)
+btHome3.addEventListener('click', handleClickPage3)
+btHome4.addEventListener('click', handleClickPage4)
+
 
 // FUNÇÕES
 
@@ -40,3 +47,4 @@ function handleClickPage4() {
     page1.classList.toggle('hide')
     page4.classList.toggle('hide')
 }
+
